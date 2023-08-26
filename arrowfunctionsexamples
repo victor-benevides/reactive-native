@@ -1,0 +1,37 @@
+import React, {useState} from 'react'
+import { View, Text } from 'react-native';
+
+function Exemplo1() {
+  return (
+    <View style={{flex: 1,justifyContent:"center", alignItems:"center"}}>
+    <Text>Olá Mundo - Exemplo 1 </Text>
+    </View>
+  )
+}
+
+const Exemplo2 = () => {
+  return(
+    <View style={{flex: 1,justifyContent:"center", alignItems:"center"}}>
+    <Text>Olá Mundo - Exemplo 2 </Text>
+    </View>
+  )
+}
+
+const Exemplo3 = () => <View style={{flex: 1,justifyContent:"center", alignItems:"center"}}><Text>Olá Mundo - Exemplo 3 </Text> </View>
+
+const Exemplo4 = ({nome = "Victor", idade = 28}) => {
+  return (
+    <View style={{flex: 1,justifyContent:"center", alignItems:"center"}}>
+    <Text>Olá Mundo para vc {nome} que logo completará a idade de {idade} anos.</Text> </View> 
+  )
+}
+
+export {Exemplo1, Exemplo2, Exemplo3, Exemplo4}
+
+export default () => {
+  return (
+    <View style={{flex:1,justifyContent:"center", alignItems: "center"}}>
+    <Text>Olá Mundo - Exemplo Default</Text>
+    </View>
+  )
+}
